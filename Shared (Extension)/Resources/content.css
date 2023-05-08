@@ -1,0 +1,48 @@
+.airts-live-proxy {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+@media (max-width: 1023.9px) {
+    .live-header__footer--collapsed .live-header__live-tracks-trigger {
+        right: 88px !important;
+    }
+    
+    .live-header .live-header__airplay {
+        background: black;
+        border-right: solid 1px white;
+        border-bottom: 0;
+    }
+    
+    .live-header__footer--collapsed .live-header__airplay {
+        border-bottom: solid 1px white;
+        border-right: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .live-header__airplay {
+        align-items: center;
+        background: #000;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        cursor: pointer;
+    }
+
+    .live-header__footer--playing .live-header__airplay {
+        border-bottom: 1px solid #000;
+    }
+
+    .live-header--collapsed .live-header__footer--playing .live-header__airplay {
+        border-bottom: 1px solid #fff;
+    }
+
+    .live-header__airplay:hover > svg {
+        opacity: .7;
+    }
+
+    .live-header__channels--collapsed {
+        margin-right: 164px !important;
+    }
+}
